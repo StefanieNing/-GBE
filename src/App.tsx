@@ -98,14 +98,18 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop" 
-            alt="Hero Background" 
+        <div className="absolute inset-0 z-0 bg-black">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop"
             className="w-full h-full object-cover opacity-40"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black"></div>
+          >
+            <source src="https://cdn.pixabay.com/video/2020/05/14/38863-419131608_large.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black"></div>
         </div>
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto mt-20">
