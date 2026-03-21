@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Mail, MapPin, Phone } from 'lucide-react';
+import { Zap, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -47,10 +47,6 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-emerald-400 shrink-0" />
                 <span>深圳南山区清华信息港科研楼</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-teal-400 shrink-0" />
-                <span>+86 400-XXX-XXXX</span>
               </li>
             </ul>
           </div>
